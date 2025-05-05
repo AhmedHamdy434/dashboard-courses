@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --background: #171717;
+  --foreground: #eee;
+  --main: #183435;
+}
+
+@theme {
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-foreground);
+  --color-main: var(--main);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+a,
+button {
+  cursor: pointer;
+}
+.btn {
+  display: block;
+  width: fit-content;
+  padding: 4px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--color-main);
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #111;
+  &:focus {
+    outline: none;
+  }
+}
